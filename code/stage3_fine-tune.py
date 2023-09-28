@@ -16,7 +16,8 @@ import pandas as pd
 from sklearn.model_selection import ShuffleSplit
 
 import sys 
-sys.path.append('code/model') 
+current_dir = os.path.dirname(os.path.abspath(__file__)) 
+sys.path.append(f"{current_dir}/model") 
 from performer_enc_dec import *
 from utils import *
 
