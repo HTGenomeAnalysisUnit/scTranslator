@@ -38,7 +38,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN	pip install requests tornado \
 	&& pip install scipy pandas numpy scanpy scikit-learn einops \
 	&& rm -rf ~/.cache/pip && rm -rf /root/.cache/pip \
-	&& pip install torch==1.6.0 torchvision==0.7.0 local-attention \
+	&& pip install torch==1.8.0 torchvision==0.9.0 local-attention \
 	&& rm -rf ~/.cache/pip && rm -rf /root/.cache/pip
 
 #Clone scTranslator from our fork with small fixes
